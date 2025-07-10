@@ -85,7 +85,7 @@ class WorkoutPlanner:
             structure["nutrition_note"] = "Include pre-workout protein sources"
             
         # Adjust based on energy levels
-        if profile.caffeine_consumption == ConsumptionFrequency.NONE:
+        if profile.caffeine_consumption == ConsumptionFrequencyCaffine.NONE:
             structure["warm_up_duration"] = "15-20 minutes"  # Longer warm-up
         
         return structure

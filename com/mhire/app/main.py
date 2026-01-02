@@ -10,7 +10,7 @@ from com.mhire.app.services.meal_planner.meal_planner_router import router as me
 from com.mhire.app.services.workout_planner.workout_planner_router import router as workout_planner_router
 
 app = FastAPI(
-    title="Gym Coach API",
+    title="VitaFlex-AI",
     description="AI-powered Gym and Health coaching application",
     version="1.0.0"
 )

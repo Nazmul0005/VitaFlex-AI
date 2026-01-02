@@ -11,7 +11,6 @@
 ![Wellness](https://img.shields.io/badge/Wellness-Smart%20Insights-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-
 ## 📋 Table of Contents
 
 - [Overview](#overview)
@@ -35,6 +34,16 @@
 
 The platform integrates OpenAI's GPT models, LangGraph for complex reasoning workflows, and Tavily for real-time health information retrieval, enabling comprehensive health analysis and recommendations.
 
+<p align="center">
+  <img src="assets/images/vita1.png" alt="Foodie Interface" width="400"/>
+  <img src="assets/images/vita4.png" alt="Foodie Interface" width="400"/>
+</p>
+
+<p align="center">
+  <img src="assets/images/vita2.png" alt="Meal Planning" width="400"/>
+  <img src="assets/images/vita3.png" alt="Health Analysis" width="400"/>
+</p>
+
 ## ✨ Features
 
 - **🤖 AI-Powered Health Analysis** - Advanced machine learning powered by OpenAI GPT models for intelligent health insights
@@ -50,18 +59,18 @@ The platform integrates OpenAI's GPT models, LangGraph for complex reasoning wor
 
 ## 🛠️ Tech Stack
 
-| Component | Technology |
-|-----------|-----------|
-| **Backend Framework** | FastAPI |
-| **ASGI Server** | Uvicorn |
-| **AI/ML** | LangChain, LangGraph, OpenAI |
-| **Data Processing** | NumPy, Pandas |
-| **HTTP Client** | HTTPX |
-| **Image Processing** | Pillow |
-| **Web Server** | Nginx (Alpine) |
-| **Containerization** | Docker, Docker Compose |
-| **Configuration** | python-dotenv |
-| **Language** | Python 3.12 |
+| Component                   | Technology                   |
+| --------------------------- | ---------------------------- |
+| **Backend Framework** | FastAPI                      |
+| **ASGI Server**       | Uvicorn                      |
+| **AI/ML**             | LangChain, LangGraph, OpenAI |
+| **Data Processing**   | NumPy, Pandas                |
+| **HTTP Client**       | HTTPX                        |
+| **Image Processing**  | Pillow                       |
+| **Web Server**        | Nginx (Alpine)               |
+| **Containerization**  | Docker, Docker Compose       |
+| **Configuration**     | python-dotenv                |
+| **Language**          | Python 3.12                  |
 
 ## 📦 Prerequisites
 
@@ -83,12 +92,14 @@ cd VitaFlex-AI
 ### 2. Create a Virtual Environment
 
 **On macOS/Linux:**
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
 **On Windows:**
+
 ```bash
 python -m venv venv
 venv\Scripts\activate
@@ -103,7 +114,7 @@ pip install -r requirements.txt
 
 ### 4. Configure Environment Variables
 
-Create a `.env` file in the root directory: 
+Create a `.env` file in the root directory:
 
 ```env
 # OpenAI Configuration
@@ -160,6 +171,7 @@ docker-compose up -d
 ```
 
 This will start:
+
 - **FastAPI Application** (port 8000, internally exposed)
 - **Nginx Reverse Proxy** (port 3001, publicly accessible)
 
@@ -188,7 +200,7 @@ docker-compose down
 
 ### Docker Environment Variables
 
-The `docker-compose.yml` loads environment variables from the `.env` file automatically. 
+The `docker-compose.yml` loads environment variables from the `.env` file automatically.
 
 ## 📁 Project Structure
 
@@ -223,6 +235,7 @@ VitaFlex-AI/
 ### Health Analysis Endpoint
 
 **Request:**
+
 ```bash
 curl -X POST "http://localhost:8000/api/health/analyze" \
   -H "Content-Type: application/json" \
@@ -236,6 +249,7 @@ curl -X POST "http://localhost:8000/api/health/analyze" \
 ```
 
 **Response:**
+
 ```json
 {
   "analysis": "Detailed health analysis.. .",
@@ -251,6 +265,7 @@ curl -X POST "http://localhost:8000/api/health/analyze" \
 ### Fitness Recommendation Endpoint
 
 **Request:**
+
 ```bash
 curl -X POST "http://localhost:8000/api/fitness/recommend" \
   -H "Content-Type: application/json" \
@@ -261,7 +276,7 @@ curl -X POST "http://localhost:8000/api/fitness/recommend" \
   }'
 ```
 
-For complete API documentation, run the application and visit `/docs` endpoint. 
+For complete API documentation, run the application and visit `/docs` endpoint.
 
 ## ⚙️ Configuration
 
@@ -337,50 +352,56 @@ uvicorn com.mhire. app.main:app --reload --host 0.0.0.0 --port 8000
 
 ## 📚 Dependencies
 
-| Package | Version | Purpose |
-|---------|---------|---------|
-| fastapi | Latest | Web framework |
-| uvicorn[standard] | Latest | ASGI server |
-| python-dotenv | Latest | Environment management |
-| httpx | Latest | HTTP client |
-| langchain | Latest | LLM orchestration |
-| langchain-openai | Latest | OpenAI integration |
-| pydantic | Latest | Data validation |
-| openai | Latest | OpenAI API client |
-| typing-extensions | Latest | Type hints |
-| python-multipart | Latest | Form data parsing |
-| pillow | Latest | Image processing |
-| tavily-python | Latest | Web search API |
-| numpy | Latest | Numerical computing |
-| pandas | Latest | Data analysis |
-| langgraph | Latest | Graph-based reasoning |
+| Package           | Version | Purpose                |
+| ----------------- | ------- | ---------------------- |
+| fastapi           | Latest  | Web framework          |
+| uvicorn[standard] | Latest  | ASGI server            |
+| python-dotenv     | Latest  | Environment management |
+| httpx             | Latest  | HTTP client            |
+| langchain         | Latest  | LLM orchestration      |
+| langchain-openai  | Latest  | OpenAI integration     |
+| pydantic          | Latest  | Data validation        |
+| openai            | Latest  | OpenAI API client      |
+| typing-extensions | Latest  | Type hints             |
+| python-multipart  | Latest  | Form data parsing      |
+| pillow            | Latest  | Image processing       |
+| tavily-python     | Latest  | Web search API         |
+| numpy             | Latest  | Numerical computing    |
+| pandas            | Latest  | Data analysis          |
+| langgraph         | Latest  | Graph-based reasoning  |
 
 ## 🤝 Contributing
 
 We welcome contributions! Please follow these steps:
 
 ### 1. Fork the Repository
+
 Click the "Fork" button on GitHub
 
 ### 2. Create a Feature Branch
+
 ```bash
 git checkout -b feature/amazing-feature
 ```
 
 ### 3. Commit Your Changes
+
 ```bash
 git commit -m 'Add some amazing feature'
 ```
 
 ### 4. Push to the Branch
+
 ```bash
 git push origin feature/amazing-feature
 ```
 
 ### 5. Open a Pull Request
+
 Create a Pull Request with a clear description of your changes
 
 ### Code Style Guidelines
+
 - Follow PEP 8
 - Use type hints
 - Write docstrings for functions
@@ -391,6 +412,7 @@ Create a Pull Request with a clear description of your changes
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for full details.
 
 **MIT License Summary:**
+
 - ✅ You can use this project for personal and commercial purposes
 - ✅ You can modify the source code
 - ✅ You can distribute the software
@@ -402,20 +424,24 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Getting Help
 
 **For Issues and Bug Reports:**
+
 - Open an [Issue](https://github.com/Nazmul0005/VitaFlex-AI/issues) on GitHub
 - Include steps to reproduce and error messages
 
 **For Discussions:**
+
 - Start a [Discussion](https://github.com/Nazmul0005/VitaFlex-AI/discussions)
 - Ask questions about features or implementation
 
 **For Security Issues:**
+
 - Please do NOT open a public issue
 - Email security concerns directly to maintainers
 
 ### Common Issues
 
 #### Port Already in Use
+
 ```bash
 # Kill process on port 8000
 lsof -ti: 8000 | xargs kill -9
@@ -425,11 +451,13 @@ uvicorn com.mhire. app.main:app --port 8001
 ```
 
 #### API Key Not Found
+
 - Ensure `.env` file exists in root directory
 - Verify `OPENAI_API_KEY` and `TAVILY_API_KEY` are set
 - Restart the application
 
 #### Docker Build Fails
+
 ```bash
 # Clear Docker cache and rebuild
 docker system prune -a
@@ -439,18 +467,21 @@ docker-compose build --no-cache
 ## 🗺️ Roadmap
 
 ### Version 1.0 (Current)
+
 - ✅ Basic health analysis
 - ✅ FastAPI framework setup
 - ✅ OpenAI integration
 - ✅ Docker deployment
 
 ### Version 1.1 (Planned)
+
 - 📋 Enhanced nutrition planning
 - 📋 User authentication and profiles
 - 📋 Health data persistence
 - 📋 Advanced analytics dashboard
 
 ### Version 2.0 (Future)
+
 - 🔮 Mobile app integration
 - 🔮 Real-time health monitoring
 - 🔮 Predictive health analytics
@@ -482,12 +513,14 @@ docker-compose build --no-cache
 ## 👤 Author
 
 **Nazmul0005**
+
 - GitHub: [@Nazmul0005](https://github.com/Nazmul0005)
 - Repository: [VitaFlex-AI](https://github.com/Nazmul0005/VitaFlex-AI)
 
 ## 📄 Changelog
 
 ### v1.0.0 (Current Release)
+
 - Initial release
 - FastAPI backend with health analysis features
 - Docker and Docker Compose setup

@@ -13,3 +13,4 @@ tavily-python
 numpy
 pandas
 langgraph
+streamlit

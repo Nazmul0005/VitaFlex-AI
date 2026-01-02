@@ -1,8 +1,16 @@
 # 🏥 VitaFlex-AI
 
-[![Docker](https://img.shields.io/badge/Docker-1.3%25-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688?logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--Powered-412991?logo=openai&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-Framework-blue)
+![LangGraph](https://img.shields.io/badge/LangGraph-Reasoning-orange)
+![AI](https://img.shields.io/badge/AI-Health%20Intelligence-brightgreen)
+![ML](https://img.shields.io/badge/Machine%20Learning-Enabled-yellow)
+![Wellness](https://img.shields.io/badge/Wellness-Smart%20Insights-blueviolet)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 
 ## 📋 Table of Contents
 
